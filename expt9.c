@@ -1,3 +1,9 @@
+9. Develop and execute a program in C using suitable data structures to create a binary tree for an expression. 
+The tree traversals in some proper method should result in conversion of original expression into prefix, infix and postfix forms.
+Display the original expression along with the three different forms also.
+
+PROGRAM:
+    
 #include <stdio.h>
 #include <stdlib.h>
 struct Node {
@@ -70,3 +76,4 @@ int main() {
 
     return 0;
 }
+
