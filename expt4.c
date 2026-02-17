@@ -1,3 +1,8 @@
+4. Write a C program to simulate working of a Messaging System in which a message is placed in a Queue by a Message Sender, 
+a message is removed from the queue by a Message Receiver, which can also display the contents of the Queue.
+
+PROGRAM:
+    
 #include <stdio.h>
 #include <stdlib.h>
 #define MAX 5
@@ -82,3 +87,4 @@ void display()
         printf("\n");
     }
 }
+
