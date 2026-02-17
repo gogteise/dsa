@@ -1,8 +1,9 @@
-1. Write a C program to merge contents of two files containing USNs of students in a 
+/*1. Write a C program to merge contents of two files containing USNs of students in a 
 sorted order into the third file such that the third file contains Unique USNs. 
 Program should also display common USNs in both the files.
 
 program:
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
