@@ -1,3 +1,10 @@
+3. A calculator needs to evaluate a postfix expression.
+Develop and execute a program in C using a suitable data structure to evaluate a valid postfix expression. 
+Assume the postfix expression is read as a single line consisting of non-negative single digit operands and binary arithmetic operators. 
+The arithmetic operators are + (add), (subtract), (multiply) and / (divide).
+
+PROGRAM:
+    
 #include <stdio.h>
 #define SIZE 20
 double eval (char exp[]){
@@ -33,3 +40,4 @@ int main(){
     scanf("%s",expr);
     printf("Result = %2f\n",eval(expr));
 }
+
