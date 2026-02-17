@@ -17,7 +17,6 @@ struct term* CreateList(struct term *head, int coeff[], int deg[], int n) {
     int i;
     struct term *newnode, *tempnode;
 
-    // Create dummy head node
     head = (struct term*)malloc(sizeof(struct term));
     if (head == NULL) {
         printf("Error in allocating memory\n");
@@ -25,9 +24,7 @@ struct term* CreateList(struct term *head, int coeff[], int deg[], int n) {
     }
     head->coeff = 0;
     head->deg = 0;
-    head->next = head;  // circular
-
-    // Insert terms
+    head->next = head; 
     for (i = 0; i < n; i++) {
         newnode = (struct term*)malloc(sizeof(struct term));
         if (newnode == NULL) {
@@ -37,8 +34,6 @@ struct term* CreateList(struct term *head, int coeff[], int deg[], int n) {
         newnode->coeff = coeff[i];
         newnode->deg = deg[i];
         newnode->next = head;
-
-        // Find last node
         tempnode = head;
         while (tempnode->next != head) {
             tempnode = tempnode->next;
@@ -82,4 +77,5 @@ int main() {
 
     return 0;
 }
+
 
