@@ -38,7 +38,7 @@ int main()
     e = exp;
     while(*e != '\0')
     {
-        if(isdigit(*e)) //if(isalnum(*e))
+        if(isdigit(*e)) 
             printf("%c",*e);
         else if(*e == '(')
             push(*e);
@@ -60,5 +60,6 @@ int main()
         printf("%c",pop());
     }
 }
+
 
 
