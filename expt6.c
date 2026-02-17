@@ -5,6 +5,7 @@ warehouse such that items can be traced easily
 PROGRAM:
 
 #include<stdio.h>
+#include<stdlib.h>
 
 struct node
 {
@@ -28,43 +29,43 @@ struct node* Add(struct node *head,int value)
 	struct node *newnode,*prev,*curr;
 
 	newnode = (struct node*)malloc(sizeof(struct node));
-	newnode->data = value;
-	newnode->next = NULL;
 
 	if(newnode == NULL)
 	{
-		printf("Error:Could not allocate memory:");
+		printf("Error:Could not allocate memory");
+		return head;
 	}
+
+	newnode->data = value;
+	newnode->next = NULL;
+
+	if(head == NULL)
+		head = newnode;
 	else
 	{
-		if(head == NULL)
+		if(newnode->data < head->data)
+		{
+			newnode->next = head;
 			head = newnode;
+		}
 		else
 		{
-			if(newnode->data < head->data)
-			{
-				newnode->next = head;
-				head = newnode;
-			}
-			else
-			{
-				curr=head->next;
-				prev=head;
+			curr=head->next;
+			prev=head;
 
-				while(curr!= NULL && newnode->data > curr->data)
-				{
-					prev = prev->next;
-					curr = curr->next;
-				}
-				prev->next = newnode;
-				newnode->next= curr;
+			while(curr!= NULL && newnode->data > curr->data)
+			{
+				prev = prev->next;
+				curr = curr->next;
 			}
+			prev->next = newnode;
+			newnode->next= curr;
 		}
 	}
 	return head;
 }
 
-void main()
+int main()
 {
 	int choice,value;
 	struct node *head= NULL;
@@ -93,5 +94,5 @@ void main()
 				break;
 		}
 	}
-
+	return 0;
 }
