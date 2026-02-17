@@ -15,11 +15,9 @@ typedef struct node {
     struct node *rlink;
 } NODE;
 
-/* Global Declarations */
 NODE *head = NULL;
 NODE *last = NULL;
 
-/* Function Declarations */
 NODE* getnode();
 void create();
 void insert_last();
@@ -60,7 +58,6 @@ int main() {
     return 0;
 }
 
-/* Function to create a new node */
 NODE* getnode() {
     NODE *newnode = (NODE *)malloc(sizeof(NODE));
 
@@ -74,8 +71,6 @@ NODE* getnode() {
     scanf("%d", &newnode->data);
     return newnode;
 }
-
-/* Insert node at the front */
 void create() {
     NODE *newnode = getnode();
 
@@ -91,7 +86,6 @@ void create() {
     printf("\nNode with value %d is inserted at front of the list\n", newnode->data);
 }
 
-/* Insert node at the end */
 void insert_last() {
     NODE *newnode = getnode();
 
@@ -107,7 +101,6 @@ void insert_last() {
     printf("\nNode with value %d is inserted at last of the list\n", newnode->data);
 }
 
-/* Display the list */
 void display() {
     NODE *temp = head;
 
@@ -124,3 +117,4 @@ void display() {
     printf("\n");
 
 }
+
