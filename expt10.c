@@ -1,3 +1,11 @@
+10.Develop and execute a program in C using suitable data structures to perform 
+Searching a data item in an ordered list of items in both directions and implement the following operations:
+1. Create a doubly linked list by adding each node at the start.
+2. Insert a new node at the end of the list.
+3. Display the content of a list.Consider an integer number as a data item
+
+PROGRAM:
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -114,4 +122,5 @@ void display() {
         temp = temp->rlink;
     }
     printf("\n");
+
 }
