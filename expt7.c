@@ -1,3 +1,8 @@
+7. Consider a polynomial addition for two polynomials.
+Develop and execute a program in C using suitable data structures to implement the same
+
+PROGRAM:
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -77,3 +82,4 @@ int main() {
 
     return 0;
 }
+
