@@ -1,3 +1,9 @@
+6.Consider a warehouse where the items have to be arranged in an ascending order. 
+Develop and execute a program in C using suitable data structures to implement 
+warehouse such that items can be traced easily
+
+PROGRAM:
+
 #include<stdio.h>
 
 struct node
@@ -87,4 +93,5 @@ void main()
 				break;
 		}
 	}
+
 }
