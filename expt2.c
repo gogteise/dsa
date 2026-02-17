@@ -1,9 +1,10 @@
 2. Consider a calculator that needs to perform checking the correctness of parenthesized arithmetic expressions and convert the same to postfix expression for evaluation.
 Develop and execute a program in C using suitable data structures to perform the same and print both the expressions.
-The input expression consists of single character operands and the binary operators +(plus), (minus), (multiply) and/ (divide).#include<stdio.h>
+The input expression consists of single character operands and the binary operators +(plus), (minus), (multiply) and/ (divide).
 
 program:
-
+    
+#include<stdio.h>
 #include<math.h>
 #include<ctype.h>
 char stack[20];
@@ -59,4 +60,5 @@ int main()
         printf("%c",pop());
     }
 }
+
 
