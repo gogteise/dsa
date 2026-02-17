@@ -1,3 +1,13 @@
+5. Consider a super market scenario where sales manager wants to search for the customer details 
+using a customer-id.Customer information like (custid, custname, & custphno) are stored in a structure, 
+and custid will be used as hash key.Develop and execute a program in C using suitable data structures 
+to implement the following operations:
+a. Insertion of a new data entry.
+b. Search for customer information using custid
+c. Display the records. (Demonstrate collision and its handling using linear probing method).
+
+PROGRAM: 
+
 #include <stdio.h>
 #include <stdlib.h>
 #define SIZE 5
@@ -111,3 +121,4 @@ int main() {
     }
     return 0;
 }
+
